@@ -19,8 +19,11 @@ class LoginController extends Controller
 
 	$em = $this->getDoctrine()->getManager();
     	$em->persist($user);
-    	if($em->flush())
+
+	$userExist = $em->getRepository('Eliastre100PokeBattleBundle:User')->findOneBy(array('name' => $name));
+    	if(empty($userExist))
 	{
+	    $em->flush();
 	    return new Response('Registered');
 	}
 	else
