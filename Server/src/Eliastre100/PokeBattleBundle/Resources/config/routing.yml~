@@ -1,0 +1,3 @@
+eliastre100_poke_battle_browse:
+    path:     /browse
+    defaults: { _controller: Eliastre100PokeBattleBundle:Login:browse }
