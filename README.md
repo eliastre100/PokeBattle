@@ -11,4 +11,4 @@ Pokebattle is a simple multiplayer game based on pokemon battle gamelay. It run 
 
 ## Informations about server
 
-1.  [URL](Doc/Server/Server_Path.md)
+1.  [URL](Doc/Server/Server_Paths.md)
