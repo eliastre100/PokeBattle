@@ -3,7 +3,7 @@ parameters:
     database_driver: pdo_mysql
     database_host: 127.0.0.1
     database_port: null
-    database_name: symfony
+    database_name: PokeBattle
     database_user: root
     database_password: null
     mailer_transport: smtp
@@ -11,4 +11,4 @@ parameters:
     mailer_user: null
     mailer_password: null
     locale: en
-    secret: bdf1ea805ac694f443c092c83e8e981ddee64143
+    secret: CHANGE_SECRET_28365430198265VSB2hh2771
