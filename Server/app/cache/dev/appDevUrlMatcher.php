@@ -138,6 +138,16 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'eliastre100_poke_battle_login')), array (  '_controller' => 'Eliastre100\\PokeBattleBundle\\Controller\\LoginController::loginAction',));
             }
 
+            // eliastre100_poke_battle_browse
+            if (preg_match('#^/PokeBattle/(?P<token>[^/]++)/browse$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'eliastre100_poke_battle_browse')), array (  '_controller' => 'Eliastre100\\PokeBattleBundle\\Controller\\LobbyController::browseAction',));
+            }
+
+            // eliastre100_poke_battle_host
+            if (preg_match('#^/PokeBattle/(?P<token>[^/]++)/host/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'eliastre100_poke_battle_host')), array (  '_controller' => 'Eliastre100\\PokeBattleBundle\\Controller\\LobbyController::hostAction',));
+            }
+
         }
 
         // homepage

@@ -11,13 +11,13 @@
 
 ## Server search
 
-|Path			|Action			|Description					|
-|-----------------------|-----------------------|-----------------------------------------------|
-|/{token}/browse	|			|List party					|
-|/{token}/host		|			|Create a party					|
-|/{token}/join/{id}	|			|Join party					|
-|/{token}/leave/{id}	|			|Leave party					|
-|/{token}/check/{id}	|			|Check state party and return a new token	|
+|Path			|Action				|Description					|
+|-----------------------|-------------------------------|-----------------------------------------------|
+|/{token}/browse	|Eliastre100PokeBattle:browse	|List party					|
+|/{token}/host/{name}	|Eliastre100PokeBattle:host	|Create a party					|
+|/{token}/join/{id}	|				|Join party					|
+|/{token}/leave/{id}	|				|Leave party					|
+|/{token}/check/{id}	|				|Check state party and return a new token	|
 
 ### Linked pages
 

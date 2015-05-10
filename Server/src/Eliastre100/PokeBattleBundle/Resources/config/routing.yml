@@ -6,3 +6,11 @@ eliastre100_poke_battle_login:
     path:     /login/{name}/{password}
     defaults: { _controller: Eliastre100PokeBattleBundle:Login:login }
 
+eliastre100_poke_battle_browse:
+    path:     /{token}/browse
+    defaults: { _controller: Eliastre100PokeBattleBundle:Lobby:browse }
+
+eliastre100_poke_battle_host:
+    path:     /{token}/host/{name}
+    defaults: { _controller: Eliastre100PokeBattleBundle:Lobby:host }
+
