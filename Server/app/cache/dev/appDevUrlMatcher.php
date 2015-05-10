@@ -127,9 +127,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // eliastre100_poke_battle_register
-        if (0 === strpos($pathinfo, '/PokeBattle/register') && preg_match('#^/PokeBattle/register/(?P<name>[^/]++)/(?P<password>[^/]++)/(?P<email>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'eliastre100_poke_battle_register')), array (  '_controller' => 'Eliastre100\\PokeBattleBundle\\Controller\\LoginController::registerAction',));
+        if (0 === strpos($pathinfo, '/PokeBattle')) {
+            // eliastre100_poke_battle_register
+            if (0 === strpos($pathinfo, '/PokeBattle/register') && preg_match('#^/PokeBattle/register/(?P<name>[^/]++)/(?P<password>[^/]++)/(?P<email>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'eliastre100_poke_battle_register')), array (  '_controller' => 'Eliastre100\\PokeBattleBundle\\Controller\\LoginController::registerAction',));
+            }
+
+            // eliastre100_poke_battle_login
+            if (0 === strpos($pathinfo, '/PokeBattle/login') && preg_match('#^/PokeBattle/login/(?P<name>[^/]++)/(?P<password>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'eliastre100_poke_battle_login')), array (  '_controller' => 'Eliastre100\\PokeBattleBundle\\Controller\\LoginController::loginAction',));
+            }
+
         }
 
         // homepage

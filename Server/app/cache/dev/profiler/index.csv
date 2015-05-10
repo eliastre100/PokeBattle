@@ -16,3 +16,9 @@ ce6fe4,127.0.0.1,GET,http://127.0.0.1:8000/PokeBattle/register/test/test/test@te
 e92915,127.0.0.1,GET,http://127.0.0.1:8000/PokeBattle/register/test/test/test@test.fr,1431282328,ea9fdc
 ea9fdc,127.0.0.1,GET,http://127.0.0.1:8000/PokeBattle/register/test/test/test@test.fr,1431282328,
 66fc92,127.0.0.1,GET,http://127.0.0.1:8000/PokeBattle/register/test/test/test@test.fr,1431282348,
+9fd85a,127.0.0.1,GET,http://127.0.0.1:8000/PokeBattle/login/test/test,1431283141,29303e
+29303e,127.0.0.1,GET,http://127.0.0.1:8000/PokeBattle/login/test/test,1431283141,
+e50d77,127.0.0.1,GET,http://127.0.0.1:8000/PokeBattle/login/test/test,1431283163,
+fe0156,127.0.0.1,GET,http://127.0.0.1:8000/PokeBattle/login/test/test,1431283168,
+2298ab,127.0.0.1,GET,http://127.0.0.1:8000/PokeBattle/login/test/test,1431283169,
+32a764,127.0.0.1,GET,http://127.0.0.1:8000/PokeBattle/login/test/testd,1431283172,

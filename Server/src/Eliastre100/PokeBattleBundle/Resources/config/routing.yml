@@ -1,3 +1,8 @@
 eliastre100_poke_battle_register:
     path:     /register/{name}/{password}/{email}
     defaults: { _controller: Eliastre100PokeBattleBundle:Login:register }
+
+eliastre100_poke_battle_login:
+    path:     /login/{name}/{password}
+    defaults: { _controller: Eliastre100PokeBattleBundle:Login:login }
+

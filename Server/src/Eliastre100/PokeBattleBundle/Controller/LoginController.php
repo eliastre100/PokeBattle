@@ -21,11 +21,29 @@ class LoginController extends Controller
     	$em->persist($user);
     	if($em->flush())
 	{
-		return new Response('Registered');
+	    return new Response('Registered');
 	}
 	else
 	{
-		return new Response('Fail');
+	    return new Response('Fail');
+	}
+    }
+
+    public function loginAction($name, $password)
+    {
+	$em = $this->getDoctrine()->getManager();
+	$repository = $em->getRepository('Eliastre100PokeBattleBundle:User');
+
+	$user = $repository->findOneBy(array('name' => $name, "password" => $password));
+	if(!empty($user))
+	{
+	    $user->setToken(uniqid());
+	    $em->flush();
+	    return new Response($user->getToken());
+	}
+	else
+	{
+	    return new Response("fail");
 	}
     }
 }
