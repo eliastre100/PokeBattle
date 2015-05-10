@@ -10,6 +10,6 @@
 |/leave/{id}	|Leave party		|
 |/check/{id}	|Check state party	|
 
-### Linkied pages
+### Linked pages
 
 *   [Server installation](Install_Server.md)

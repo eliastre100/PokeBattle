@@ -2,6 +2,6 @@
 
 # Client need to be build
 
-### Linkied pages
+### Linked pages
 
 No page found.

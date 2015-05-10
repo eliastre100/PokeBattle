@@ -7,6 +7,6 @@
 3.  Check if symfony is able to run `php app/check.php //When you are on the root server's folder`
 4.  Update database `php app/console doctrine:database:create php app/console doctrine:shema:update --force`
 
-### Linkied pages
+### Linked pages
 
 No page found
