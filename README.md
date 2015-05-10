@@ -1,6 +1,14 @@
 # PokeBattle
-A simple multiplayer game based on pokemon battle gamelay
 
-_____
-[Installation](https://github.com/eliastre100/PokeBattle/blob/master/Doc/Install.md)
-[Paths](https://github.com/eliastre100/PokeBattle/blob/master/Doc/Server_paths.md)
+Pokebattle is a simple multiplayer game based on pokemon battle gamelay. It run with a client side application write in C++ and a client side in PHP
+
+* * *
+
+## Installtion
+
+1.  [Server installation](Doc/Server/Install_Server.md)
+2.  [Client installation](Doc/Client/Install_Client.md)
+
+## Informations about server
+
+1.  [URL](Doc/Server/Server_Path.md)
